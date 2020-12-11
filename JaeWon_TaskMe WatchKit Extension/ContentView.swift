@@ -15,14 +15,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text(activity).foregroundColor(.yellow)
-                Spacer()
+                Text(activity).foregroundColor(.yellow).font(.system(size: 20)).padding(15)
                 Button(action: {getActivity()}, label: {
                     Text("Suggest me an activity")
-                }).foregroundColor(.green)
+                }).foregroundColor(.green).buttonStyle(PlainButtonStyle())
             }.onAppear{
                 getActivity()
-            }.navigationBarTitle("Jae Won").padding(20)
+            }.navigationBarTitle("Jae Won")
         }
     }
     
