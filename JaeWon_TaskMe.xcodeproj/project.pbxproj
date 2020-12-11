@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16F5D0872583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 16F5D0862583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16F5D08D2583CE320022E6CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D08B2583CE320022E6CA /* Interface.storyboard */; };
+		16F5D08F2583CE340022E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D08E2583CE340022E6CA /* Assets.xcassets */; };
+		16F5D0962583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16F5D0952583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16F5D09B2583CE340022E6CA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D09A2583CE340022E6CA /* HostingController.swift */; };
+		16F5D09D2583CE340022E6CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D09C2583CE340022E6CA /* ContentView.swift */; };
+		16F5D09F2583CE340022E6CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D09E2583CE340022E6CA /* ExtensionDelegate.swift */; };
+		16F5D0A12583CE340022E6CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0A02583CE340022E6CA /* NotificationController.swift */; };
+		16F5D0A32583CE340022E6CA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0A22583CE340022E6CA /* NotificationView.swift */; };
+		16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0A42583CE340022E6CA /* ComplicationController.swift */; };
+		16F5D0A72583CE350022E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A62583CE350022E6CA /* Assets.xcassets */; };
+		16F5D0AA2583CE350022E6CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16F5D0882583CE320022E6CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16F5D07C2583CE310022E6CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16F5D0852583CE320022E6CA;
+			remoteInfo = "JaeWon_TaskMe WatchKit App";
+		};
+		16F5D0972583CE340022E6CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16F5D07C2583CE310022E6CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16F5D0942583CE340022E6CA;
+			remoteInfo = "JaeWon_TaskMe WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16F5D0B22583CE350022E6CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				16F5D0962583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F5D0B62583CE350022E6CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				16F5D0872583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16F5D0822583CE310022E6CA /* JaeWon_TaskMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JaeWon_TaskMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F5D0862583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JaeWon_TaskMe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F5D08C2583CE320022E6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		16F5D08E2583CE340022E6CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16F5D0902583CE340022E6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F5D0952583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JaeWon_TaskMe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F5D09A2583CE340022E6CA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		16F5D09C2583CE340022E6CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16F5D09E2583CE340022E6CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		16F5D0A02583CE340022E6CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		16F5D0A22583CE340022E6CA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		16F5D0A42583CE340022E6CA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		16F5D0A62583CE350022E6CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16F5D0AB2583CE350022E6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F5D0AC2583CE350022E6CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16F5D0922583CE340022E6CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16F5D07B2583CE310022E6CA = {
+			isa = PBXGroup;
+			children = (
+				16F5D08A2583CE320022E6CA /* JaeWon_TaskMe WatchKit App */,
+				16F5D0992583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */,
+				16F5D0832583CE310022E6CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16F5D0832583CE310022E6CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16F5D0822583CE310022E6CA /* JaeWon_TaskMe.app */,
+				16F5D0862583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app */,
+				16F5D0952583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16F5D08A2583CE320022E6CA /* JaeWon_TaskMe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				16F5D08B2583CE320022E6CA /* Interface.storyboard */,
+				16F5D08E2583CE340022E6CA /* Assets.xcassets */,
+				16F5D0902583CE340022E6CA /* Info.plist */,
+			);
+			path = "JaeWon_TaskMe WatchKit App";
+			sourceTree = "<group>";
+		};
+		16F5D0992583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16F5D09A2583CE340022E6CA /* HostingController.swift */,
+				16F5D09C2583CE340022E6CA /* ContentView.swift */,
+				16F5D09E2583CE340022E6CA /* ExtensionDelegate.swift */,
+				16F5D0A02583CE340022E6CA /* NotificationController.swift */,
+				16F5D0A22583CE340022E6CA /* NotificationView.swift */,
+				16F5D0A42583CE340022E6CA /* ComplicationController.swift */,
+				16F5D0A62583CE350022E6CA /* Assets.xcassets */,
+				16F5D0AB2583CE350022E6CA /* Info.plist */,
+				16F5D0AC2583CE350022E6CA /* PushNotificationPayload.apns */,
+				16F5D0A82583CE350022E6CA /* Preview Content */,
+			);
+			path = "JaeWon_TaskMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		16F5D0A82583CE350022E6CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16F5D0812583CE310022E6CA /* JaeWon_TaskMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F5D0B72583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe" */;
+			buildPhases = (
+				16F5D0802583CE310022E6CA /* Resources */,
+				16F5D0B62583CE350022E6CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16F5D0892583CE320022E6CA /* PBXTargetDependency */,
+			);
+			name = JaeWon_TaskMe;
+			productName = JaeWon_TaskMe;
+			productReference = 16F5D0822583CE310022E6CA /* JaeWon_TaskMe.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		16F5D0852583CE320022E6CA /* JaeWon_TaskMe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F5D0B32583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe WatchKit App" */;
+			buildPhases = (
+				16F5D0842583CE320022E6CA /* Resources */,
+				16F5D0B22583CE350022E6CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16F5D0982583CE340022E6CA /* PBXTargetDependency */,
+			);
+			name = "JaeWon_TaskMe WatchKit App";
+			productName = "JaeWon_TaskMe WatchKit App";
+			productReference = 16F5D0862583CE320022E6CA /* JaeWon_TaskMe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		16F5D0942583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F5D0AF2583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe WatchKit Extension" */;
+			buildPhases = (
+				16F5D0912583CE340022E6CA /* Sources */,
+				16F5D0922583CE340022E6CA /* Frameworks */,
+				16F5D0932583CE340022E6CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JaeWon_TaskMe WatchKit Extension";
+			productName = "JaeWon_TaskMe WatchKit Extension";
+			productReference = 16F5D0952583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16F5D07C2583CE310022E6CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					16F5D0812583CE310022E6CA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					16F5D0852583CE320022E6CA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					16F5D0942583CE340022E6CA = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 16F5D07F2583CE310022E6CA /* Build configuration list for PBXProject "JaeWon_TaskMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16F5D07B2583CE310022E6CA;
+			productRefGroup = 16F5D0832583CE310022E6CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16F5D0812583CE310022E6CA /* JaeWon_TaskMe */,
+				16F5D0852583CE320022E6CA /* JaeWon_TaskMe WatchKit App */,
+				16F5D0942583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16F5D0802583CE310022E6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F5D0842583CE320022E6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F5D08F2583CE340022E6CA /* Assets.xcassets in Resources */,
+				16F5D08D2583CE320022E6CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F5D0932583CE340022E6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F5D0AA2583CE350022E6CA /* Preview Assets.xcassets in Resources */,
+				16F5D0A72583CE350022E6CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16F5D0912583CE340022E6CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F5D09D2583CE340022E6CA /* ContentView.swift in Sources */,
+				16F5D09B2583CE340022E6CA /* HostingController.swift in Sources */,
+				16F5D0A12583CE340022E6CA /* NotificationController.swift in Sources */,
+				16F5D09F2583CE340022E6CA /* ExtensionDelegate.swift in Sources */,
+				16F5D0A32583CE340022E6CA /* NotificationView.swift in Sources */,
+				16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16F5D0892583CE320022E6CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16F5D0852583CE320022E6CA /* JaeWon_TaskMe WatchKit App */;
+			targetProxy = 16F5D0882583CE320022E6CA /* PBXContainerItemProxy */;
+		};
+		16F5D0982583CE340022E6CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16F5D0942583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */;
+			targetProxy = 16F5D0972583CE340022E6CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16F5D08B2583CE320022E6CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16F5D08C2583CE320022E6CA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16F5D0AD2583CE350022E6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16F5D0AE2583CE350022E6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16F5D0B02583CE350022E6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JaeWon_TaskMe WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NC378L24W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "JaeWon_TaskMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		16F5D0B12583CE350022E6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JaeWon_TaskMe WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NC378L24W9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "JaeWon_TaskMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		16F5D0B42583CE350022E6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NC378L24W9;
+				IBSC_MODULE = JaeWon_TaskMe_WatchKit_Extension;
+				INFOPLIST_FILE = "JaeWon_TaskMe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		16F5D0B52583CE350022E6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NC378L24W9;
+				IBSC_MODULE = JaeWon_TaskMe_WatchKit_Extension;
+				INFOPLIST_FILE = "JaeWon_TaskMe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		16F5D0B82583CE350022E6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NC378L24W9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		16F5D0B92583CE350022E6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NC378L24W9;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JWP.JaeWon-TaskMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16F5D07F2583CE310022E6CA /* Build configuration list for PBXProject "JaeWon_TaskMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F5D0AD2583CE350022E6CA /* Debug */,
+				16F5D0AE2583CE350022E6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F5D0AF2583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F5D0B02583CE350022E6CA /* Debug */,
+				16F5D0B12583CE350022E6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F5D0B32583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F5D0B42583CE350022E6CA /* Debug */,
+				16F5D0B52583CE350022E6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F5D0B72583CE350022E6CA /* Build configuration list for PBXNativeTarget "JaeWon_TaskMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F5D0B82583CE350022E6CA /* Debug */,
+				16F5D0B92583CE350022E6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16F5D07C2583CE310022E6CA /* Project object */;
+}
