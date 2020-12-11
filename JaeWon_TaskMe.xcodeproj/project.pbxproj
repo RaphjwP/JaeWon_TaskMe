@@ -19,6 +19,7 @@
 		16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0A42583CE340022E6CA /* ComplicationController.swift */; };
 		16F5D0A72583CE350022E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A62583CE350022E6CA /* Assets.xcassets */; };
 		16F5D0AA2583CE350022E6CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */; };
+		16F5D0BF2583CEE20022E6CA /* Bored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0BE2583CEE20022E6CA /* Bored.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16F5D0AB2583CE350022E6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F5D0AC2583CE350022E6CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		16F5D0BE2583CEE20022E6CA /* Bored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bored.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,8 @@
 		16F5D0992583CE340022E6CA /* JaeWon_TaskMe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				16F5D0C92583CFDD0022E6CA /* ViewModel */,
+				16F5D0BD2583CECE0022E6CA /* Model */,
 				16F5D09A2583CE340022E6CA /* HostingController.swift */,
 				16F5D09C2583CE340022E6CA /* ContentView.swift */,
 				16F5D09E2583CE340022E6CA /* ExtensionDelegate.swift */,
@@ -145,6 +149,21 @@
 				16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16F5D0BD2583CECE0022E6CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16F5D0BE2583CEE20022E6CA /* Bored.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16F5D0C92583CFDD0022E6CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +299,7 @@
 				16F5D09F2583CE340022E6CA /* ExtensionDelegate.swift in Sources */,
 				16F5D0A32583CE340022E6CA /* NotificationView.swift in Sources */,
 				16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */,
+				16F5D0BF2583CEE20022E6CA /* Bored.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
