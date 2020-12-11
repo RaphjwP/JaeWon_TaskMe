@@ -11,7 +11,7 @@ class BoredObjectViewModel : ObservableObject {
     @Published var boredObject = BoredObject()
     
     
-    var apiURLString = "http://www.boredapi.com/api/activity"
+    var apiURLString = "https://www.boredapi.com/api/activity"
     
     func fetchDataFromAPI(){
         guard let apiURL = URL(string: apiURLString) else{
