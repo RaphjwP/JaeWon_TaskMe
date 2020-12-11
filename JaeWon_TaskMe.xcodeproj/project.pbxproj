@@ -19,7 +19,8 @@
 		16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0A42583CE340022E6CA /* ComplicationController.swift */; };
 		16F5D0A72583CE350022E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A62583CE350022E6CA /* Assets.xcassets */; };
 		16F5D0AA2583CE350022E6CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */; };
-		16F5D0BF2583CEE20022E6CA /* Bored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0BE2583CEE20022E6CA /* Bored.swift */; };
+		16F5D0CB2583D02A0022E6CA /* BoredObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0CA2583D02A0022E6CA /* BoredObject.swift */; };
+		16F5D0D62583D05C0022E6CA /* BoredObjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5D0D52583D05C0022E6CA /* BoredObjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +82,8 @@
 		16F5D0A92583CE350022E6CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16F5D0AB2583CE350022E6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F5D0AC2583CE350022E6CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		16F5D0BE2583CEE20022E6CA /* Bored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bored.swift; sourceTree = "<group>"; };
+		16F5D0CA2583D02A0022E6CA /* BoredObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredObject.swift; sourceTree = "<group>"; };
+		16F5D0D52583D05C0022E6CA /* BoredObjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredObjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +156,7 @@
 		16F5D0BD2583CECE0022E6CA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				16F5D0BE2583CEE20022E6CA /* Bored.swift */,
+				16F5D0CA2583D02A0022E6CA /* BoredObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 		16F5D0C92583CFDD0022E6CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				16F5D0D52583D05C0022E6CA /* BoredObjectViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -297,9 +300,10 @@
 				16F5D09B2583CE340022E6CA /* HostingController.swift in Sources */,
 				16F5D0A12583CE340022E6CA /* NotificationController.swift in Sources */,
 				16F5D09F2583CE340022E6CA /* ExtensionDelegate.swift in Sources */,
+				16F5D0D62583D05C0022E6CA /* BoredObjectViewModel.swift in Sources */,
 				16F5D0A32583CE340022E6CA /* NotificationView.swift in Sources */,
 				16F5D0A52583CE340022E6CA /* ComplicationController.swift in Sources */,
-				16F5D0BF2583CEE20022E6CA /* Bored.swift in Sources */,
+				16F5D0CB2583D02A0022E6CA /* BoredObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
